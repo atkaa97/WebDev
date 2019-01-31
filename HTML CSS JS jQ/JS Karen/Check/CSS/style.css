@@ -1,0 +1,36 @@
+#add_to{
+    margin-top: 30px;
+    min-height: 400px;
+    height: auto;
+    width: 700px;
+    outline: 1px solid gray;
+}
+.mini_div{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: silver;
+    margin: 10px;
+    cursor: pointer;
+}
+.mini_chbx{
+    position: absolute;
+    bottom:-20px;
+    left: 28%;
+}
+#quest, #main_chbx, #my_remove_btn{
+    display: none;
+}
+
+#main{
+
+    width: 700px;
+    margin: 50px auto;
+}
+#quest{
+    margin: 200px auto 0;
+    width: 120px;
+    outline: 1px solid gray;
+    padding: 5px 15px 15px;
+}

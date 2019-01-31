@@ -1,0 +1,23 @@
+#slide{
+	position: relative;
+	height: 480px;
+	width: 640px;
+	margin: 50 auto 0;
+	background: url(../images/img1.jpg) center no-repeat;
+}
+#left, #right{
+	cursor: pointer;
+	position: absolute;
+	font-size: 66px;
+	top: 42%;
+	height: 100%;
+}
+#right{
+	right: 0;
+}
+#left{
+	display: none;
+}
+i{
+	text-shadow: 0 0 4px white;
+}

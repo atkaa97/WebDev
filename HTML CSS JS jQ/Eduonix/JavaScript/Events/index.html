@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | JS</title>
+  <script>
+    function sayHi() {
+      alert('Hello,page is loading!');
+    }
+    function changeMe() {
+      var heading = document.getElementById('heading');
+      heading.innerHTML = 'No kidding';
+    }
+    function changeMeBack() {
+      var heading = document.getElementById('heading');
+      heading.innerHTML = 'This is heading';
+    }
+    function focusIn() {
+      alert('I am in the field');
+    }
+    function blurOut() {
+      alert('I am out of the field');
+    }
+  </script>
+</head>
+
+<body onload="return sayHi()">
+  <button onclick="return sayHi() ">Click Me!</button>
+  
+  <br>
+  <h1 id="heading" onmouseover="return changeMe()" onmouseout="return changeMeBack()">This is heading</h1>
+
+  <form>
+    Name:
+    <input onfocus="return focusIn()" onblur="return blurOut()" type="text" name="name">
+    <br> <br>
+    <input type="submit" value="Click here!">
+  </form>
+</body>
+
+</html>

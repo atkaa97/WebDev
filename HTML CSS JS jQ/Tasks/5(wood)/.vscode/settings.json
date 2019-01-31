@@ -1,0 +1,6 @@
+{
+    "editor.renderWhitespace": "none",
+    "window.menuBarVisibility": "toggle",
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on"
+}

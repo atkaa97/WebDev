@@ -1,0 +1,19 @@
+#box{
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
+
+#box2{
+	background-color: orange;
+	height: 30px;
+	width: 30px;
+}
+
+#box:active + #box2{
+	background-color: green;
+}
+
+#inputbox:focus{
+	background: green;
+} 

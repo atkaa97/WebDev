@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+body{
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+}
+#position_div{
+	margin: 250px 0 0 10px;
+	height: 85px;
+}
+.list_item{
+	width: 170px;
+	height: 85px;
+	position: relative;
+	float: left;
+	margin-right: 1px;
+}
+/***********************************************************************
+***main
+***********************************************************************/
+.main{
+	width: 170px;
+	height: 85px;
+	border-radius: 3px;
+	background: rgba(163,163,163,0.15);
+	transition: all 0.8s ease;
+}
+.main_head{
+	padding-top: 25px;
+	padding-left: 10px;
+}
+.main_head a{
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+.main_content a{
+	padding-left: 10px;
+	font-size: 11px;
+	color: #0B75AF;
+}
+.list_item:hover .main{
+	background: rgba(16,16,16,0.7);
+	height: 170px;
+	transform: translate(0,85px);
+	transition: all 0.4s ease;
+}
+.list_item:hover .main_head{
+	padding-top: 50px;
+}
+/***********************************************************************
+***img
+***********************************************************************/
+.img{
+	width: 170px;
+	height: 0.00000001px;
+	position: absolute;
+	overflow: hidden;
+	bottom:0;
+	transition: all 0.4s ease;
+}
+.list_item:hover .img{
+	height: 170px;
+	transition: all 0.4s ease;
+}
+/***********************************************************************
+***right ***left
+***********************************************************************/
+.right, .left{
+	width: 0.0000001px;
+	height: 170px;
+	background: #000;
+	overflow: hidden;
+}
+.right_item, .left_item{
+	margin: 15px 0 0 10px;
+	width: 165px;
+}
+.right_item a, .left_item a{
+	font-size: 13px;
+	color: #0B75AF;
+}
+.right_item a:hover, .left_item a:hover{
+	color: #fff;
+}
+.list_item:hover .right{
+	width: 170px;
+	float: left;
+	transition: width 0.4s 0.4s ease;
+	transform: translate(171px,-85px);
+}
+.list_item:hover .left{
+	width: 170px;
+	float: right;
+	transition: width 0.4s 0.4s ease;
+	transform: translate(-171px,-85px);
+}
+/***********************************************************************
+***just_try
+***********************************************************************/
+.just_try{
+	height: 100px;
+	width: 800px;
+	background: gray;
+	text-align: center;
+}

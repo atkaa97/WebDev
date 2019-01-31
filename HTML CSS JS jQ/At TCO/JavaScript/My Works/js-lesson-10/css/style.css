@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding:  0;
+}
+
+body, html{
+	background-color: #eee;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+	width:1170px;
+	margin: 0 auto;
+}
+
+header{
+	height: 50px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header input{
+	margin-top: 10px;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid #ccc;
+	padding: 5px;
+	width:200px;
+}
+
+header button{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 2px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+.result{
+	margin-top: 40px;
+}
+
+.slick-slide.slick-current.slick-active{
+	display: block !important;
+}
+
+#products{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width:100%;
+}
+.slick-slide.slick-current.slick-active.fancybox-content{
+	width: 100% !important;
+	text-align: center;
+}
+
+.slick-slide.slick-current.slick-active.fancybox-content img {
+	object-fit: contain;
+	width: unset !important;
+}
+
+#products > div{
+	width:49%;
+	margin-right: 1%;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 1%;
+	display: inline-block;
+	transition: 0.3s ease;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#products a {
+	text-decoration: none;
+	color: inherit;
+}
+#products > div:hover{
+	transform: scale(1.01);
+}
+
+#products > div img{
+	width:100%;
+	height: 200px;
+	object-fit: contain;
+}
+
+.info{
+	margin-top: 10px;
+}
+
+.searchBox{
+	position: relative;
+}
+
+.searchBox .dropdown{
+	position: absolute;
+	list-style: none;
+	width:400px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 0 0 5px 5px;
+	display: none;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 45;
+}
+
+.dropdown li {
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+
+.dropdown li:hover, .dropdown li.active{
+	background: #eee;
+}
+
+.icons{
+	text-align: right;
+}
+
+.icons i{
+	margin-left:10px;
+	transition: 0.3s ease;
+	font-size: 20px;
+}
+
+.icons i:hover{
+	color:orange;
+}

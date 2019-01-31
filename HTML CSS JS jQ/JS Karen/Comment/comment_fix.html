@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Comment_fix</title>	
+		<style>
+			div#comment_auto{
+				width:400px;
+				height:auto;
+	            border:1px solid gray;
+	            border-bottom:none;
+	            margin-top:30px;
+	            overflow:auto;
+			}
+			div#comment{
+				width:400px;
+				height:200px;
+	            border:1px solid gray;
+	            border-top:none;
+	            overflow:auto;
+			}
+		</style>
+
+		 <script>
+		 function writeComment(){
+			document.getElementById("comment_auto").innerHTML 	=
+			document.getElementById("text").value;
+		}
+		function addComment(){
+			document.getElementById("comment").innerHTML += 	
+			"<p>" + document.getElementById("text").value + "</p>" ;
+			document.getElementById("text").value 	= null;
+			document.getElementById("comment_auto").innerHTML 	= "";
+		}
+		function resetAll() {
+			document.getElementById("comment").innerHTML = null;
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="text" oninput = "writeComment()"; onchange = "addComment()">
+		<button onclick="addComment()" ondblclick="resetAll()">Add and reset !!!</button>
+		<div id="comment_auto"></div>
+		<div id="comment"></div>
+	</body>
+</html>

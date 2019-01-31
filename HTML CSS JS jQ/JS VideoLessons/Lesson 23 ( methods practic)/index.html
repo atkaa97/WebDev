@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+
+        var str = 'i creat a lot of web sites ` http://mysite.am , www.my-supersite.am , Site4u.AM , https://my-big-site.am , website.com';
+
+        var regexp = /(www\.)?(https?:\/\/)?[a-z0-9-]{2,}\.am/gi;
+
+        var result = str.match(regexp); 
+
+        for (i = 0; i < result.length; i++) {
+
+            document.write(result[i] + '<br>');
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

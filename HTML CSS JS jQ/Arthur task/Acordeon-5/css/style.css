@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+body{
+	background: #ededed;
+}
+#position_div{
+	height: 200px;
+	width: 642px;
+	margin: 50px;
+	overflow: hidden;
+}
+.list_item{
+	float: left;
+	border-left: 2px solid white;
+	width: 78px;
+	height: 200px;
+	transition: all 0.7s ease;
+}
+.list_item:hover {
+	width: 320px;
+}
+.last{
+	width: 320px;
+}
+#position_div:hover .last{
+	width: 78px;
+}

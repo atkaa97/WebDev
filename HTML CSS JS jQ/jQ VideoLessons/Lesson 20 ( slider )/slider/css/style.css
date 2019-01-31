@@ -1,0 +1,31 @@
+#content{
+    background-color: rgb(134, 134, 134);
+    height: 600px;
+    width: 600px;
+    margin:auto;
+    overflow: hidden;
+}
+#start{
+    background-color: rgb(63, 63, 63);
+    height: 380px;
+    width: 580px;
+    margin:10px auto;
+}
+#images{
+    height: 180px;
+    width: 580px;
+    background-color: #fff;
+    margin: auto;
+}
+#start img{
+height: 380px;
+width: 580px;
+}
+
+#images img{
+    float: left;
+    height: 180px;
+    width: 145px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}

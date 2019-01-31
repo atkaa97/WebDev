@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	background: url(dd.gif) repeat-x;
+}
+/************************************************************
+***menu
+*************************************************************/
+#menu{
+	margin: 78px auto 0;
+	width: 500px;
+	list-style: none;
+	/*overflow: hidden;*/
+
+}
+.menu{
+	position: relative;
+	line-height: 45px;
+	width: 100px;
+	display: list-item;
+	float: left;
+
+}
+.menu a{
+	display: block;
+    border-right: 1px solid #fff;
+    background: #E0F574;
+    color: #3B3B3B;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 10px;
+}
+
+.menu:hover a{
+	color: white;
+	background: #5798b4;
+}
+/************************************************************
+***sub_menu
+*************************************************************/
+#sub_menu{
+	position: absolute;
+	list-style: none;
+	left: -99999px;
+}
+.menu:hover #sub_menu{
+	top: 35px;
+	left: 7px;
+	z-index: 2;
+}
+.sub_menu{
+	position: relative;
+	line-height: 45px;
+	width: 100px;
+}
+.menu:hover .sub_menu a{
+	background: #AEC245;
+    color: #3B3B3B;
+    border: 1px solid #fff; 
+}
+.menu .sub_menu:hover a{
+	color: white;
+	background: #5798b4;
+}
+/************************************************************
+***sub_menu2
+*************************************************************/
+#sub_menu2{
+	position: absolute;
+	list-style: none;
+	left: -99999px;
+}
+.sub_menu:hover #sub_menu2{
+	left: 75px;
+	top: 15px;
+	z-index: 3;
+}
+.sub_menu2{
+	position: relative;
+	line-height: 45px;
+	width: 100px;
+	z-index: 5;
+}
+.sub_menu:hover .sub_menu2 a{
+	background: #AEC245;
+    color: #3B3B3B;
+    border: 1px solid #fff; 
+}
+.menu .sub_menu2:hover a{
+	color: white;
+	background: #5798b4;
+}

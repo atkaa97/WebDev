@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	font-family: verdana, sans-serif;
+	background: #f4f1e5;
+}
+/*********************************************************
+***linkback
+**********************************************************/
+#linkback{
+	text-align: center;
+	background: #efebd9;
+	height: 30px;
+}
+#linkback a{
+	text-decoration: none;
+	color: black;
+	line-height: 30px;
+	font-size: 14px;
+}
+#linkback a:hover{
+	text-decoration: underline;
+}
+/*********************************************************
+***main
+**********************************************************/
+#main{
+	width: 800px;
+	margin: auto;
+}
+/*********************************************************
+***ul
+**********************************************************/
+ul{
+	padding-left: 0;
+	margin: 55px auto 20px;
+}
+ul li{
+	list-style: none;
+	display: inline;
+	text-transform: uppercase;
+	padding-right: 25px;
+}
+ul li a{
+	text-decoration: none;
+	font-size: 22px;
+	color: #544738;
+	letter-spacing: 3px;
+}
+ul li a:hover{
+	color: #7eb9be;
+}
+/*********************************************************
+***poster
+**********************************************************/
+#poster{
+	width: 800px;
+	height: 428px;
+	background: url(../img/bg.jpg) no-repeat;
+	margin-left: -12px;
+}
+/*********************************************************
+***content
+**********************************************************/
+#content h1{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+#content p{
+	font-size: 12px;
+	line-height: 20px;
+	column-count: 3;
+}

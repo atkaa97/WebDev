@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditionals | JS</title>
+</head>
+
+<body>
+  <script>
+    var x = 6;
+    if (x > 5 && x < 10) {
+      alert('Yes it is!');
+    }
+    else {
+      alert('No it is not');
+    }
+  </script>
+
+  <script>
+    var color = 'black';
+
+    if (color == 'red') {
+      document.write('The color is red!');
+    }
+    else if (color == 'blue') {
+      document.write('The color is blue!');
+    }
+    else {
+      document.write('The color is not red or blue!');
+    }
+  </script>
+
+  <br>
+
+  <script>
+    a = 4;
+    switch (a) {
+      case 2:
+        document.write('a is 2');
+        break;
+
+      case 5:
+        document.write('a is 5');
+        break;
+
+      default:
+        document.write('a is not 2 or 5');
+    }
+  </script>
+
+  <script>
+    var day = new Date().getDay();
+    switch (day) {
+      case 0:
+        x = "Today is's Sunday";
+        break;
+      case 1:
+        x = "Today is's Monday";
+        break;
+      case 2:
+        x = "Today is's Tuesday";
+        break;
+      case 3:
+        x = "Today is's Wednesday";
+        break;
+      case 4:
+        x = "Today is's Thursday";
+        break;
+      case 5:
+        x = "Today is's Friday";
+        break;
+      case 6:
+        x = "Today is's Saturday";
+        break;
+    }
+    alert(x);
+  </script>
+
+</body>
+
+</html>

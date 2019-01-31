@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #D9E7EA;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  letter-spacing: 5px;
+  padding-top: 20px;
+}
+
+#bikes {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+#bikes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: rgba(33, 152, 182, 0.109);
+  box-shadow: 0 0 45px rgba(33, 152, 182, 0.308);
+  transition: 0.2s;
+
+}
+
+#bikes img:hover {
+  box-shadow: 0 0 60px rgba(33, 152, 182, 0.52);
+}
+
+#parentDiv>div:not(.toWebsite) {
+  float: left;
+}
+
+.slideToLeft,
+.slideToRight {
+  margin-top: 130px;
+  width: 15%;
+}
+
+.slideToLeft button,
+.slideToRight button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 65px;
+  color: rgb(211, 0, 0);
+  transition: 0.2s;
+  outline: 0;
+  opacity: 0.7;
+}
+
+.slideToLeft button:hover,
+.slideToRight button:hover {
+  opacity: 1;
+}
+
+.toWebSite {
+  width: 1170px;
+  margin: 35px auto 30px;
+  text-align: center;
+}
+
+.toWebSite a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 35px;
+  opacity: 0.5;
+  transition: 0.2s;
+  color: rgb(211, 0, 0);
+  font-weight: 600;
+}
+
+.toWebSite a:hover {
+  opacity: 1;
+  color: rgb(246, 66, 0);
+}

@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding:0;	
+}
+
+.external{
+	color:red;
+	font-size:50px;
+	text-shadow:5px 5px 10px;
+}
+#content{
+	margin:20px;
+	padding:20px;
+}
+
+#content div.item{
+	float:left;
+	margin-right:10px;
+}
+.clearfix{
+	clear:both;
+}

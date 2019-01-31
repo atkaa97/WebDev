@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="body">
+    <div id="header" class="header">
+        <h1>Learning JavaScript / Forms</h1>
+        <p>With Traversy</p>
+    </div>
+    <div class="container">
+        <form action="somthing.php" method="post" name='myForm'>
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" id="firstName" />
+            </div>
+            <br>
+
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <br>
+
+            <div>
+                <label>Background</label>
+                <select name="background" id="background" onchange="changeBackground(this)">
+                    <option value="#333333">Grey</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        function changeBackground(x) {
+            console.log(x.value);
+            var header = document.getElementById('header');
+            header.style.backgroundColor = x.value;
+        }
+    </script>
+</body>
+
+</html>

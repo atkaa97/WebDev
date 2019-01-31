@@ -1,0 +1,20 @@
+#drag_from{
+    margin-top: 10px;
+}
+#drag_to{
+    height: 400px;
+    width: 700px;
+    outline: 1px solid gray;
+}
+#mini_div{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: silver;
+    margin: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#resalt{
+    font-size: 20px;
+}

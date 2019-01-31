@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Keypress</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body onkeydown="moveDiv(), moveDiv2(), moveDiv3()">
+		<select id="speed" onchange="selectSpeed()">
+			<option value=" ">Select the speed
+			<option value="1">1px Very Slow
+  			<option value="5">5px Slow
+  			<option value="10">10px Medium
+  			<option value="25">25px Fast
+  			<option value="50">50px Very Fast
+		</select>
+		<select id="divs_properties" onchange="divsProperties()">
+			<option value=" ">Select divs size
+			<option value="10">10x10 Small
+  			<option value="50">50x50 Medium
+  			<option value="100">100x100 Large
+		</select>
+		<select id="box_size" onchange="setBoxSize()">
+			<option value=" ">Select box size
+			<option value="250">250x250 Small
+  			<option value="450">450x450 Medium
+  			<option value="650">650x650 Large
+  			<option value="850">850x850 Huge
+		</select>
+		<div id="main">
+			<div id="first"  onclick="switchDivFirst()"></div>
+			<div id="second" onclick="switchDivSecond()"></div>
+			<div id="third" onclick="switchDivThird()"></div>
+		</div>
+		<div id="button">
+			<div id="buttom_up">
+				<button onclick="moveDivWithButton(38)">Up</button><br>
+			</div>
+			<div id="buttom_others">
+				<button onclick="moveDivWithButton(37)" >Left</button>
+				<button onclick="moveDivWithButton(40)">Down</button>
+				<button onclick="moveDivWithButton(39)">Right</button>
+			</div>
+		</div>
+	</body>
+</html>
+
+

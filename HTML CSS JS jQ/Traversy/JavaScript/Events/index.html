@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onload="showDate()">
+    <div class="header">
+        <h1 id="heading">Learning JavaScript / Events</h1>
+        <p>With Traversy</p>
+    </div>
+    <div class="container">
+
+        <!-- <button onclick="this.innerHTML='You Clicked'">Click Here</button> -->
+        <!-- <button onclick="doClick()">Click Here</button> -->
+        <!-- <button onclick="changeText(this)">Click Here</button> -->
+        <!-- <button onclick="changeText()">Click Here</button> -->
+        <!-- <button onclick="showDate()">Show Date</button> -->
+        <button onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+
+        <h1 id="time"></h1>
+    </div>
+    <!-- <script>
+        function doClick() {
+            alert('You clicked!!');
+        }
+    </script> -->
+    <!-- <script>
+        function changeText(id) {
+            id.innerHTML = 'You clicked';
+        }
+    </script> -->
+    <!-- <script>
+        function changeText(id) {
+            var heading = document.getElementById('heading');
+            heading.innerHTML = 'You Clicked!';
+        }
+    </script> -->
+    <script>
+        function showDate() {
+            var time = document.getElementById('time');
+            time.innerHTML = Date();
+        }
+        function clearDate() {
+            var time = document.getElementById('time');
+            time.innerHTML = '';
+        }
+    </script>
+</body>
+
+</html>

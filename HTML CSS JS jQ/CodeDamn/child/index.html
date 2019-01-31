@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Child Selector</title>
+		<style>
+			body >	div > div{
+				color: green; 
+			}
+			div{
+				color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>line 1</div>
+			<p>line 2</p>
+			<div>
+				line 3
+					<p>Line 3.1</p>
+					<div>Line 3.2</div>
+			</div>
+		</div>
+		<div>ABC</div>
+	</body>
+</html>

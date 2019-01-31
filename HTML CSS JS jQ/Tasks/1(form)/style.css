@@ -1,0 +1,20 @@
+.chap{
+	display: block;
+	margin: 7px 3px;
+	width: 300px;
+}
+a{
+	text-decoration: none;
+}
+
+.ser{
+	display: inline;
+}
+p{
+	display: inline;
+}
+
+.payman{
+width: 300px;
+}
+

@@ -1,0 +1,15 @@
+div{
+	color: green;
+}
+
+#div{
+	color: red;
+}
+
+.div{
+color: blue;
+}
+
+div.div{
+	color: yellow ;
+}

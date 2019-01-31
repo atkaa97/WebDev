@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        function myFunc() {
+            var myTag = document.getElementById('test');
+        //    alert('test id unecox tegi texty ` ' + myTag.innerText); //myTag.textContent
+
+        myTag.innerHTML = 'Poxoutyun'; 
+        }
+    </script>
+</head>
+
+<body onload="myFunc()">
+    <h1 id='test'>Header</h1>
+    <p>Paragraph</p>
+    <div>
+        <img src="https://quintagroup.com/cms/js/js-image/javascript-logo.png/image_preview" alt="">
+        <p style="width: 200px">JS Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+
+</html>

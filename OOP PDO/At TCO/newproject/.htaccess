@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+#ete miacvac e mod rewrite modul@
+    RewriteEngine on
+    #miacnum enq rewrite engine@
+    RewriteRule ^$ webroot/ [L]
+    #veraberum e bolor zaprosnerin ev texapoxum dranq webroot
+    RewriteRule (.*) webroot/$1 [L]
+    # veraberum e ayn zaprosnerin, voroncum kan lracucich simvolner,
+    # dranq ktexapoxvem webroot konkret parametrnerov, voronq nshvac en exel adresnaya strokayum
+</IfModule>

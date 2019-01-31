@@ -1,0 +1,24 @@
+li:nth-child(2n+1){
+	color: rgb(9, 147, 202)
+}
+
+tr{
+	background: #eee;
+}
+
+tr:nth-child(odd){
+	background: rgb(32, 134, 32);
+}
+
+tr:nth-child(even){
+	background: rgb(86, 194, 86);
+}
+
+tr:nth-child(1){
+	background: rgb(5, 92, 5);
+	color: #fff
+}
+table *{
+	text-align:center;
+	padding: 10px;
+}

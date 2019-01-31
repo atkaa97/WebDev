@@ -1,0 +1,343 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	transition: all 0.3s;
+}
+.content{
+	background-image: url(../img/background.jpeg);
+	overflow: hidden;
+}
+						/* MENU @@@@@@@@@@@@@@@@@@@@@ */
+.menu{
+	overflow: hidden;
+	width: 100%;
+	height: 85px;
+	background-color: #000;
+}
+.navbar{
+	overflow: hidden;
+	width: 1100px;
+	height: 85px;
+	margin: auto;
+}
+.navbar-autofan-logo{
+	cursor: pointer;
+	margin-top: 20px;
+	float: left;
+}
+.navbar-list{
+	float: right;
+	margin-top: 35px;
+}
+.navbar-list>ul>li{
+	padding-bottom: 25px;
+	margin-left:30px;
+	text-align: center;
+	float: left;
+}
+.navbar-list>ul>li>a{
+	font-size: 16px;
+	color: rgb(194, 194, 194);
+}
+.navbar-list>ul>li>a:hover{
+	color: #fff;
+}
+.navbar-list>ul>li:hover{
+	border-bottom: 7px solid #e45e1d;
+}
+						/* BMW  @@@@@@@@@@@@@@@@@@@@ */
+.bmw{
+	overflow: hidden;
+	width: 100%;
+	height: 650px;
+	background-image: url(../img/back.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.bmw-content{
+	overflow: hidden;
+	width: 1100px;
+	height: 30px;
+	margin: auto;
+	margin-top: 20px;
+}
+.hayeren{
+	height: 30px;
+	width: 113px;
+	background-color: #525252;
+	border-radius: 5px;
+	float: right;
+}
+.hayeren-flag{
+	margin: 5px;
+	float: left;
+}
+.hayeren>a>p{
+	font-size: 14px;
+	margin: 5px;
+	float: left;
+	color: #E8E8E4;
+}
+.fa-caret-down{
+	color: #E8E8E4;
+	margin-top: 5px;
+}
+.hayeren>a:hover p{
+	color: #fff;
+}
+.hayeren>a:hover .fa{
+	color: #fff;
+}
+						/* MAIN @@@@@@@@@@@@@@@@@@@@ */
+.main{
+	overflow: hidden;
+	width: 1100px;
+	height: 900px;
+	margin: auto;
+	margin-top: 45px;
+}
+.main-left{
+	overflow: hidden;
+	width: 825px;
+	float: left;
+}
+						/* EVENTS @@@@@@@@@@@@@@@@@@ */
+.events{
+	overflow: hidden;
+	width: 825px;
+	margin-bottom: 25px;
+}
+.main-header{
+	height: 25px;
+	background-color: #000;
+	margin-bottom: 10px;
+}
+.main-header-img{
+	float: left;
+}
+.main-header>p{
+	color: #fff;
+	float: left;
+	font-size: 16px;
+	padding: 2px 0 3px 12px;
+}
+.main-header>a{
+	font-size: 14px;
+	color: #e45e1d;
+	float: right;
+	border-left: 1px solid rgb(160, 160, 159);
+	padding: 4px 8px 3px 12px;
+}
+.main-header>a:hover{
+	color: #fff;
+}
+.events-items{
+overflow: hidden;
+height: 300px;
+border: 1px #808080 solid;
+box-sizing: border-box;
+}
+.events-item{
+	box-sizing: border-box;
+	float: left;
+	width: 274px;
+	height: 300px;
+	text-align: center;
+}
+.events-item-img{
+	width: 235px;
+	margin: auto;
+	margin-bottom: 8px;
+	margin-top: 12px;
+}
+.events-item>a{
+	color: #e45e1d;
+	font-size: 16px;
+	font-weight: bold;
+}
+.events-item>a:hover{
+	color: #4d4d4d;
+}
+					/* NEWS @@@@@@@@@@@@@@@@@@@@@@@ */
+.news{
+	overflow: hidden;
+	width: 825px;
+}
+.news-items{
+	overflow: hidden;
+	border: 1px #808080 solid;
+	box-sizing: border-box;
+	height: 462px;
+}
+.news-item{
+	overflow: hidden;
+	height: 154px;
+	border-bottom: 1px solid #808080;
+}	
+.news-item-img>img{
+	float: left;
+	border: #D3D2D7 10px solid;
+	margin-right: 15px;
+}
+.news-item-text{
+	margin: 15px;	
+}
+.news-item-text>h5{
+	color: #e45e1d;
+	font-size: 15px;
+	padding: 10px;
+}
+.news-item-text>p{
+	line-height: 18px;
+	color: #a3a0a1;
+	font-size: 15px;
+}
+.read-more{
+	border-radius: 3px;
+	color: #fff;
+	background-color: #a3a0a1;
+	font-size: 15px;
+	margin-left: 5px;
+	padding:0 2px 2px 2px;
+}
+.read-more:hover{
+	background-color: #3b3b3b;
+}
+						/* MAIN-RIGHT @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.main-right{
+	overflow: hidden;
+	float: right;
+	width: 260px;
+	height: 900px;
+}
+.main-right-item1{
+	height: 335px;
+}
+.main-right-item1-header{
+	height: 70px;
+	border-radius: 10px 10px 0 0;
+	background-color: #000;
+}
+.main-right-item1-header>h4{
+	line-height: 20px;
+	padding: 15px 10px 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+.main-right-item1-content{
+	background-color: #F2F2F2;
+	border: 1px solid #808080;
+	overflow: hidden;
+	height: 265px;
+	padding: 13px 0 0 5px;
+	box-sizing: border-box;
+	
+}
+.yuxer{
+	height: 60px;
+	padding: 5px 5px 5px 10px;
+	box-sizing: border-box;
+}
+.yuxer>h5{
+	font-weight: 100;
+color: gray;
+font-size: 16px;
+padding-bottom:5px; 
+}
+.percent{
+width: 200px;
+margin-right: 10px;
+}
+.main-right-item2{
+	margin-top: 25px;
+	border-radius: 10px;
+	height: 275px;
+	width: 260px;
+	background-image: url(../img/addd.jpg);
+	background-size: cover;
+}
+.main-right-item3{
+	margin-top: 25px;
+	height: 200px;
+	width: 260px;
+	background-image: url(../img/face_b.jpg);
+	background-size: cover;
+}
+						/* MAP @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.map{
+	overflow: hidden;
+	width: 100%;
+	height: 600px;
+	background-color: #fff;
+}
+.map-header{
+	overflow: hidden;
+	margin:auto;
+	width: 1100px;
+	height: 45px;
+}
+.map-header>a{
+	font-size: 20px;
+	display: block;
+	color: gray;
+	padding: 8px 0;
+}
+.map-header>a:hover{
+	color: rgb(39, 39, 39);
+}
+.map-img{
+	background-image: url('../img/map_arm.jpg');
+	background-size: cover;
+	height: 555px;
+}
+							/* FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@` */
+.footer{
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+	background-color: #000;
+	padding-top: 50px;
+}
+.footer-content{
+	overflow: hidden;
+	width: 1100px;
+	margin: auto;
+}
+.footer-menu>ul>li:hover{
+	border-bottom: 0px solid #e45e1d;
+}
+.footer-menu{
+	margin-top: 15px;
+	float: left;
+}
+.footer-all-right{
+	padding-left: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #808080;
+	float: right;
+	border-left: 1px solid #808080;
+}
+			/* CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.contact{
+	/* display: none; */
+	position: fixed;
+	bottom: 0;
+	height: 60px;
+	width: 1100px;
+	left: 50%;
+	margin-left: -550px;
+	background-color: #000;
+	border-radius: 10px 10px 0 0;
+}
+.contact-item1{
+	display: none;
+}
+.contact-item2{
+	display: none;
+}

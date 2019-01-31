@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contain{
+    width: 1300px;
+    margin: auto;
+}
+.navbar{
+    position: relative;
+    top:40px;
+    left:15px;
+}
+.first>h4{ 
+    cursor: pointer;
+    font-size: 12px;
+    padding: 12px 7px 0px;
+    height: 90px;
+    width: 96px;
+}
+.navbar>ul>.first{
+    float: left;
+    margin:0.5px;
+    background-color: rgba(17, 21, 34, 0.89);
+    color:  rgb(185, 185, 185);
+}
+.navbar>ul:hover .first{
+    background-color: rgb(221, 221, 221);
+    color:rgba(39, 39, 39, 0.432);
+}
+.navbar>ul>.first:hover{
+    background-color: #fff;
+    color: #000;
+}
+.list{
+    float: left;
+    width: 33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.list>ul>li{
+    margin:4px 0 ;
+}
+.list>ul>li>a{
+    color: #000;
+    font-size: 12px;
+}
+.list>ul>li:hover a{
+    color: #fff;
+}
+.list>ul>li:hover{
+    background-color: #000;
+}
+.li-header:hover{
+    background-color: #fff !important;
+}
+.li-header{
+    background-color: #fff;
+    font-size: 18px;
+    color: rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding-bottom: 5px;
+    margin-bottom: 20px !important;
+}
+.long{
+  width:100%;
+}
+.stories,.collections,.events,.projects,.fragrances ,.bgbox{
+    position: absolute;
+    top:104px;
+    left:1px;
+    width: 554px;
+    height: 0px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.navbar>ul>li:hover>.collections{
+    height: 270px;
+    transition: 0.4s ease-out;
+}
+.navbar>ul>li:hover>.projects{
+    height: 270px;
+    transition: 0.4s ease-out;
+}
+.navbar>ul>li:hover>.fragrances{
+    height: 270px;
+    transition: 0.4s ease-out;
+}
+.navbar>ul>li:hover>.events{
+    height: 270px;
+    transition: 0.4s ease-out;
+}
+.navbar>ul>li:hover>.stories{
+    height: 270px;
+    transition: 0.4s ease-out;
+}
+.header1{
+    margin: 40px 0 0 15px;
+    float: right;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+.header2{
+    position: relative;
+    z-index: -1;
+    top:0;
+    left: 20px;
+}
+.header1>h1{
+    margin: 0px 0 10px;
+    color: #fff;
+    font-size: 72px;
+}
+.header1>h3{
+    color: #fff;
+    font-size: 18px; 
+    float: right;
+}
+.header2>h1{
+    margin-top: 120px;
+    float: left;
+    font-size: 42px;
+    color: #fff;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(10, 10, 10);
+}
+.footer a{
+    color: rgb(190, 190, 190);
+    font-size: 10px;
+    float: right;
+    margin: 5px 5px 0 30px;
+}
+.footer a:hover{
+    color: #fff;
+}
+.bgbox{
+    transition: 0.2s ease-out;
+}
+.navbar:hover .bgbox{
+    height: 270px;
+}

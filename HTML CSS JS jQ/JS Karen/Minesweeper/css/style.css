@@ -1,0 +1,40 @@
+table{
+	 border: 1px solid black;
+	 border-collapse: collapse;
+}
+td{
+    border: 1px solid silver;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+div{
+	margin: 10px 0 10px 30px;
+}
+.sett p{
+    font-size: 22px;
+}
+.start{
+	margin-bottom: 10px;
+    display: none;
+}
+.sett, .game{
+    width: 650px;
+    margin: 30px auto;
+}
+.red{
+	background: red;
+}
+.blue{
+	background: blue
+}
+.red_border{
+	border: 2px solid red;
+}

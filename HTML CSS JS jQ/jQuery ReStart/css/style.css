@@ -1,0 +1,38 @@
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box {
+    height: 600px;
+    width: 800px;
+    margin: 100px auto;
+    background: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: rgb(3, 94, 15);
+}
+
+.box p {
+    line-height: 30px;
+    color: rgb(119, 3, 3);
+    font-size: 19px;
+}
+
+.images {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.images img {
+    object-fit: contain;
+    float: left;
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}

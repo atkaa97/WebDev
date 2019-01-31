@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minesweeper</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="sett">
+			<div class="alert alert-info">
+				<p>Count of bombs</p>
+			</div>
+			<div class="form-group">
+				<input type="number" class="form-control level" value="10">
+			</div>
+			<div class="alert alert-info">
+				<p>Size</p>
+			</div>
+			<div class="form-group">
+				<select class="form-control size" id="sel1">
+				  <option value="5">5x5</option>
+				  <option value="6">6x6</option>
+				  <option value="7">7x7</option>
+				  <option value="8">8x8</option>
+				  <option value="9">9x9</option>
+				  <option value="10" selected="selected">10x10</option>
+				  <option value="11">11x11</option>
+				  <option value="12">12x12</option>
+				  <option value="13">13x13</option>
+				  <option value="14">14x14</option>
+				  <option value="15">15x15</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><button class="btn btn-info">Start !!!</button></p>
+			</div>
+		</div>
+
+		<div class="game">
+			<form action="">
+				<input type="submit" value="Start again " class="start btn btn-info">	
+			</form>
+			<table class="my_table" oncontextmenu="return false"></table>
+		</div>
+		<script src="js/main.js"></script> 
+	</body>
+</html>

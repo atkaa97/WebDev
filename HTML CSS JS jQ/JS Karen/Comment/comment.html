@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Comment</title>
+		<script>
+		function addComment(copy,paste) {
+		    var x = document.getElementById("text").value;
+		    document.getElementById("comment").innerHTML += '<p>'+ x +'</p>';
+		}
+		function resetAll() {
+			document.getElementById("comment").innerHTML = null;
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="text">
+		<button onclick="addComment()" ondblclick="resetAll()">Add a comment !!!</button>
+		<div style="width:400px;
+			height:200px;
+            border:1px solid gray;
+            margin-top:30px;
+            overflow:auto";
+            id="comment">
+		</div>	
+	</body>
+</html>

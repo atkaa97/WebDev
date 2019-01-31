@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+*::selection{
+  background-color: green;
+}
+
+/* Helper Classes */
+
+.clearfix{
+  clear: both;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/*Selectors*/
+

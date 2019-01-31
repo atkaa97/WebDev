@@ -1,0 +1,5 @@
+Ստեղծել User class, որը կունենա protected firstname, lastname, email property-ներ:
+Ունենալ setAndPrint մեթոդ, որը կստանա երկու արգումենտ(property_name, value), property-ի արժեքը կհավասարեցնի փոխանցված արժեքին և կտպի այդ property-ի անունը և արժեքը:
+Տվյալների բազայում ստեղծել users աղյուսակ, firstname, lastname, email column-ներով, ավելացնել մի քանի user այդ աղյուսակում:
+Ստանալ բոլոր տվյալները users աղյուսակից, ամեն մեկի համար ստեղծել User class-ի օբյեկտ, setAndPrint մեթոդի միջոցով տպել յուրաքանչյուրի firstname, lastname և email-ը:
+Բազայի հետ գործողությունները կարատել PDO-ի միջոցով, օգտագործել try/catch:

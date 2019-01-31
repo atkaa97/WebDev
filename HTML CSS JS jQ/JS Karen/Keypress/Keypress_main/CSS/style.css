@@ -1,0 +1,28 @@
+body{
+	text-align: center;
+}
+#main{
+    position: relative;
+	overflow: hidden;
+    margin:30px auto;
+}
+#button{
+	display: none;
+	text-align: center;
+	margin: auto;
+}
+button{
+	width: 80px;
+	height: 30px;
+	margin-bottom: 4px;
+}
+#first, #second, #third{
+    text-align: center;
+    position: absolute;
+    background: silver;
+    cursor: pointer;
+}
+#box_size, #divs_properties{
+	display: none;
+	margin: auto;
+}

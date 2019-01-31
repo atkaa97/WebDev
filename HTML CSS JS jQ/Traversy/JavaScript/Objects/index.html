@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Learning JavaScript / Objects</h1>
+        <p>With Traversy</p>
+    </div>
+    <div class="container">
+
+    </div>
+
+    <!-- Objects *********************************** -->
+
+
+    <!-- <script>
+        var person = {
+            firstName: 'Arthur',
+            lastName: 'Margarian',
+            age: '20',
+            friends: ['Saqo', "Mond", 'Edo','Grisho']
+        }
+        console.log(person.friends[2]);
+    </script> -->
+
+    <!-- <script>
+        var person = {
+            firstName: 'Arthur',
+            lastName: 'Margarian',
+            age: '20',
+            friends: ['Saqo', "Mond", 'Edo', 'Grisho'],
+            adress: {
+                street: 'Vilnius 14/16',
+                city: 'Yerevan',
+                country: 'Armenia'
+            },
+            fullName: function () {
+                return this.firstName + ' ' + this.lastName +'   ' + this.age + ' years old' ;
+            }
+        }
+        console.log(person.fullName());
+    </script> -->
+
+    <!-- <script>
+        var apple = new Object();
+        apple.color = 'red';
+        apple.shape = 'round';
+
+        apple.describe = function () {
+            return 'An apple is the color ' + this.color + ' and is the shape ' + this.shape;
+        }
+        console.log(apple.describe());
+    </script> -->
+
+    <!-- <script>
+        function Fruit(name, color, shape) {
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+
+        }
+        var apple = new Fruit('apple', 'red', 'round');
+        var melon = new Fruit('melon', 'green', 'round');
+        console.log(melon.color);
+    </script> -->
+
+    <!-- <script>
+        function Fruit(name, color, shape) {
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+
+            this.describe = function () {
+                return 'A ' + this.name + ' is the color ' + this.color + ' is the shape ' + this.shape;
+            }
+        }
+        var apple = new Fruit('apple', 'red', 'round');
+        var melon = new Fruit('melon', 'green', 'round');
+        console.log(melon.describe());
+    </script> -->
+
+    <script>
+        var users = [
+            {
+                name: 'Hovhannes Tumanyan',
+                age: '149'
+            },
+            {
+                name: 'Petros Ptrosyan',
+                age: '39'
+            },
+            {
+                name: 'Karen Margaryan',
+                age: '26'
+            },
+        ];
+        console.log(users[0]);
+    </script>
+
+</body>
+
+</html>

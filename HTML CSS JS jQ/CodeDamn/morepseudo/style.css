@@ -1,0 +1,13 @@
+input[type="email"]:invalid,input[type="number"]:invalid{
+background: red;
+color: #fff;
+} 
+
+p{
+	min-height: 10px; 
+	line-height: 14px;
+}
+
+.div:not(.div2){
+	background-color: #333;
+}

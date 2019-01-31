@@ -1,0 +1,9 @@
+﻿Ստեղծել User class(նշել namespace), որը կունենա հետևյալ protected property-ները՝ անուն, ազգանուն, տարիք և  public getter, setter մեթոդներ դրանց համար(օր.՝ setName, getName):
+
+Ստեղծել Student class(նույն namespace-ով), որը կլինի User դասի ժառանգ և կպարունակի նաև կուրս և կրթաթոշակ property-ները կրկին իրենց մեթոդներով:
+
+Class-ները ստեղծել առանձին ֆայլերով:
+
+Ստեղծել index.php, որում ստեղծել Student class-ի երկու օբյեկտ, տալ դրանց property-ներին արժեքներ(առանց __construct magic method-ի):
+
+Ստեղծել <table>, որում տպել այդ երկու օբյեկտների property-ները իրենց արժեքներով:

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Lesson 9</title>
+</head>
+<body>
+<header>
+	<div class="container searchBox">
+		<form id='submitForm' autocomplete="off">
+			<input type="text" id='searchProduct' placeholder="Enter a product name" />
+			<button type="submit">Search</button>
+		</form>
+		<ul class="dropdown"></ul>
+	</div>
+</header>
+
+
+<main>
+	<section class="container">
+		<div class="result d-flex justify-content-between">
+			<div>Results: <strong></strong></div>
+			<div class='mr-3'>
+				<div class="form-input">
+					<select class='form-control d-inline-block sortBy-change'>
+						<option value=''>Select Sort By</option>
+						<option value='name'>Name</option>
+						<option value='price'>Price</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<section id='products'>
+
+		</section>
+	</section>
+</main>
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-3">
+      <img src="" id='image' class="img-thumbnail float-left" width='400'/>
+      <div class="float-left">
+      	<div>Name: <strong id='name'></strong></div>
+      	<div>Price: <strong id='price'></strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade openSlide" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-3">
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade bd-edit-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-3">
+      <form id='submitEdit'>
+      <div class="form-group">
+      	<img src="" class="img-thumbnail productImage" width='200' class="d-block">
+	    <label class="btn btn-warning text-white" for='chooseImage'>Choose Image</label>
+	    <input id='chooseImage' type="file" class="form-control d-none">
+	  </div>
+	  <div class="form-group">
+	    <label>Name</label>
+	    <input name='name' type="text" class="form-control" placeholder="Enter name">
+	    <small class="form-text text-muted"></small>
+	  </div>
+	  <div class="form-group">
+	    <label>Price</label>
+	    <input name='price' type="number" class="form-control" placeholder="Enter price" step="0.1">
+	    <small class="form-text text-muted"></small>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal-delete" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Do you really want to delete this product?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id='yes-delete'>Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/name.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

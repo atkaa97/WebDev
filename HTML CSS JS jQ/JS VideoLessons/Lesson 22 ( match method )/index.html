@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        // var str = '36985 some text';
+        // var regexp = /^\d{5}/;
+        // var result = str.match(regexp);
+        // document.write(result);
+
+
+        var numbers = 'Arthur ` (098)66-84-90 ,  Karen ` (095)86-88-17 ,  Ani ` (077)66-51-01';
+        var numberFinder = /\(\d{3}\)\d{2}-\d{2}-\d{2}/g;
+        var result = numbers.match(numberFinder);
+       
+        document.write(result); 
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

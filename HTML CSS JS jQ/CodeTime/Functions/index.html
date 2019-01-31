@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions | Website JS DEMO</title>
+</head>
+
+<body>
+
+    <script>
+        // var cats = [
+        //     'Sam',
+        //     'Frank',
+        //     'Amy',
+        //     'Bath'
+        // ];
+
+        // for (var i = cats.length - 1; i >= 0; i--) {
+        //     alert('The cats name is ' + cats[i]);
+        // }
+
+        // function adder(number1, number2) {
+        //     $total = number1 + number2;
+        //     alert($total);
+        // }
+        // adder(5, 10);
+        // adder(55465, 10454);
+        // adder(54, 1078);
+
+
+        // function makeCake(type, size) {
+        //     return 'You want a ' + size + ' ' + type + ' cake!';
+        // }
+        // $cake = makeCake('vanilla', 'large');
+
+        // console.log($cake);
+
+        // alert($cake);
+
+        function makeCake(type, size) {
+            if (size == 'large' || size == 'l') {
+                return 'You want a large ' + type + ' cake!';
+            }
+            else if (size == 'small' || size == 's') {
+                return 'You want a small ' + type + ' cake!';
+            }
+            else {
+                return 'You want a ' + type + ' cake!';
+            }
+        }
+        $cake = makeCake('vanilla', 'www');
+
+        console.log($cake);
+
+        alert($cake);
+
+    </script>
+</body>
+
+</html>
