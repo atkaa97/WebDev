@@ -22,10 +22,6 @@ class Router
         $controllerName = $controllerAction[0];
         $actionName = ($controllerAction[1]);
 
-        if ($controllerName == 'public') {
-            return include_once(BASE_PATH . DIRECTORY_SEPARATOR . $controllerName . DIRECTORY_SEPARATOR . $actionName . DIRECTORY_SEPARATOR . $controllerAction[2]);
-        }
-
         $controllerNamespace = "App\\Controllers\\";
         $controllerClassName = ucfirst($controllerName) . 'Controller';
         $controllerClass = $controllerNamespace . $controllerClassName;

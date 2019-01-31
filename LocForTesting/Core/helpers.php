@@ -10,6 +10,14 @@ function base_path($path)
 	return file_path(BASE_PATH . '/' . $path);
 }
 
+function str_to_camel($string)
+{
+	$i = 0;
+	return implode('', array_map(function ($item) use (&$i) {
+		return $i++ ? ucfirst(strtolower($item)) : $item;
+	}, explode('-', $string)));
+}
+
 function view($view_name, $view_properties = [], $layout = 'main')
 {
 	$views_path = '/App/Views/';
@@ -30,9 +38,38 @@ function view($view_name, $view_properties = [], $layout = 'main')
 	$view = str_replace('@content', $view, $layout);
 	return $view;
 }
+//
+//function show_error($message)
+//{
+//	echo $message;
+//}
+//
+//function request()
+//{
+//	return Core\Request::init();
+//}
 
 function redirect($url)
 {
 	header('Location: ' . $url);
 	die();
 }
+
+if (!function_exists('dd')) {
+    function dd($value)
+    {
+        echo '<pre>';
+        var_dump($value);
+        exit;
+    }
+}
+
+//function session()
+//{
+//	return Core\Session::init();
+//}
+//
+//function is_json($string) {
+//	json_decode($string);
+//	return (json_last_error() == JSON_ERROR_NONE);
+//}
