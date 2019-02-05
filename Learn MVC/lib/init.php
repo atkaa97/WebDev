@@ -1,6 +1,6 @@
 <?php
 
-require_once(ROOT . DS . 'config' . DS . 'config.php');
+//require_once(ROOT . DS . 'config' . DS . 'config.php');
 
 //spl_autoload_register('autoLoad');
 //
@@ -22,4 +22,6 @@ require_once(ROOT . DS . 'config' . DS . 'config.php');
 //        throw new Exception('Failed to include class :' . $class_name);
 //    }
 //}
+
+phpinfo();
 
