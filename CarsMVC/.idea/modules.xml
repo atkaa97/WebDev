@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CarsMVC.iml" filepath="$PROJECT_DIR$/.idea/CarsMVC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../bmw_fans/Smbat/.idea/newproject.iml" filepath="$PROJECT_DIR$/../../bmw_fans/Smbat/.idea/newproject.iml" />
-    </modules>
-  </component>
-</project>
