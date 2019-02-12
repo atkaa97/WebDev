@@ -1,17 +1,24 @@
 Jarangakanutyun/Inheritance
-	Jarangakanutyuny hnaravorutyun e talis class-in janargel parametrer ev method-ner ir parent class-ic
+	Jarangakanutyuny hnaravorutyun e talis class-in 
+	janargel parametrer ev method-ner ir parent class-ic
 
 Encapsuation
-	Encapsulacian mexanizm e vory sahmanapakum e mutqy classi methodnerin ev parametrerin,dranq darnum en hasaneli miayn classi nersum,katarvum e private ev protected modifikatornerov
+	Encapsulacian mexanizm e vory sahmanapakum e mutqy classi 
+	methodnerin ev parametrerin,dranq darnum en hasaneli miayn 
+	classi nersum,katarvum e private ev protected modifikatornerov
 
 Polymorphism
-	Polymorphism-y mi shablon e vorum class-ner karox en unenal tarber functionalner,bayc ogtagorcven mek yndhanur interface-ov
+	Polymorphism-y mi shablon e vorum class-ner karox en unenal 
+	tarber functionalner,bayc ogtagorcven mek yndhanur interface-ov
 
 Abstruct
-	Abstructy ayn class-n e vori object-ner chenq karox stexcel,dranq stecvum en miayn ir jarangneric, isk ete method-y abstruct e apa nra irakanacumy(marminy/body-n) bacakayum e,irakanacumy jarangnerum petq e partadir katarvi
+	Abstructy ayn class-n e vori object-ner chenq karox stexcel,dranq 
+	stecvum en miayn ir jarangneric, isk ete method-y abstruct e apa 
+	nra irakanacumy(marminy/body-n) bacakayum e,irakanacumy jarangnerum petq e partadir katarvi
 
 Interface
-	Inteface gorciq e vory cuyc e talis te inch method petq e parunaki class-y aranc ayd method-i nkaragrutyan
+	Inteface gorciq e vory cuyc e talis te inch method petq e 
+	parunaki class-y aranc ayd method-i nkaragrutyan
 
 Trait
 	Trait-nery xmbavorum en voroshaki functional, vorpesszi class-um drancic ogtvenq 
