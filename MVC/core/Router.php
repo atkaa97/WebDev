@@ -18,12 +18,12 @@ class Router
         //params
         $params = $url;
 
-        $dispatch = new $controller($controller_name,$action);
-//        dd($dispatch);
-        if(method_exists    ($controller,$action)){
-            call_user_func_array([$dispatch,$action],$params);
-        }else{
-            die('That method does not exists in the controller \"' . $controller_name . '\"');
+        $dispatch = new $controller($controller_name, $action);
+//        dd($action);
+        if (method_exists($controller, $action)) {
+            call_user_func_array([$dispatch, $action], $params);
+        } else {
+            die('The "' . $action . '" method does not exists in the controller \"' . $controller_name . '\"');
         }
     }
 }
