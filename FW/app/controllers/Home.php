@@ -11,6 +11,10 @@ class Home extends Controller
 
     public function indexAction()
     {
+        $db = DB::getInstance();
+        $sql = 'SELECT * FROM contacts';
+        $contactsQuery = $db->query($sql);
+        dd($contactsQuery);
         $this->view->rander('home/index');
     }
 }
