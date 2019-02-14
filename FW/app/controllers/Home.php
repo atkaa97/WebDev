@@ -45,13 +45,27 @@ class Home extends Controller
 ////////////////////////////////////////////////////////////////////////// Delete end
 //
 //
-////////////////////////////////////////////////////////////////////////// Delete end
+////////////////////////////////////////////////////////////////////////// TODO Results start
 //        $contacts = $db->query("SELECT * FROM contacts ORDER BY lname, fname")->results();
 //        dd($contacts[0]['fname']);
-////////////////////////////////////////////////////////////////////////// Delete end
+//        $columns = $db->get_columns('contacts');
+//        dd($columns);
+////////////////////////////////////////////////////////////////////////// Results end
 
-        $columns = $db->get_columns('contacts');
-        dd($columns);
+//        $contacts = $db->find('contacts',[
+//           "whereFields" => ['lname = ?'],
+//            "whereValues" => ['Vachoyan'],
+//            "order" => "id",
+//            "limit" => '100 '
+//        ]);
+//        dd($contacts);
+
+        $contactFirts = $db->findFirst('contacts',[
+            "whereFields" => ['fname = ?'],
+            "whereValues" => ['Garnik'],
+        ]);
+        dd($contactFirts);
+
         $this->view->rander('home/index');
     }
 }
