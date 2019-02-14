@@ -23,6 +23,7 @@ class DB
         return self::$_instace;
     }
 
+////////////////////////////////////////////////////////////////////////  TODO Query start
     public function query($sql, $params = [])
     {
         $this->_error = false;
@@ -35,7 +36,7 @@ class DB
                 }
             }
             if ($this->_query->execute()) {
-                $this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
+                $this->_results = $this->_query->fetchAll(PDO::FETCH_ASSOC);
                 $this->_count = $this->_query->rowCount();
                 $this->_lastInsertID = $this->_pdo->lastInsertId();
             } else {
@@ -45,31 +46,113 @@ class DB
         return $this;
     }
 
-
+//////////////////////////////////////////////////////////////////////// Query End
+//
+//
+//////////////////////////////////////////////////////////////////////// TODO Insert start
     public function insert($table, $fields = [])
     {
         $fieldString = '';
         $valueString = '';
         $values = [];
+
         foreach ($fields as $field => $value) {
             $fieldString .= '`' . $field . '`,';
-            $valueString .=  '\'' . $value . '\' ,';
+            $valueString .= '?,';
             $values[] = $value;
         }
 
         $fieldString = rtrim($fieldString, ',');
         $valueString = rtrim($valueString, ',');
+
         $sql = "INSERT INTO $table ($fieldString) VALUES ($valueString)";
+//        dd($sql);
         if (!$this->query($sql, $values)->error()) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
+
+////////////////////////////////////////////////////////////////////////// Insert end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO Uptade start
+    public function update($table, $id, $fields = [])
+    {
+        $fieldString = '';
+        $values = [];
+        foreach ($fields as $field => $value) {
+            $fieldString .= ' ' . $field . ' = ?,';
+            $values[] = $value;
+        }
+
+        $fieldString = trim($fieldString);
+        $fieldString = rtrim($fieldString, ',');
+        $sql = "UPDATE $table SET $fieldString WHERE id = {$id}";
+        if (!$this->query($sql, $values)->error()) {
+            return true;
+        }
+        return false;
+    }
+
+////////////////////////////////////////////////////////////////////////// Uptade end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO Delete start
+    public function delete($table, $id)
+    {
+        $sql = "DELETE FROM $table WHERE id = {$id}";
+        if (!$this->query($sql)->error()) {
+            return true;
+        }
+        return false;
+    }
+
+////////////////////////////////////////////////////////////////////////// Delete end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO Results start
+    public function results()
+    {
+        return $this->_results;
+    }
+
+////////////////////////////////////////////////////////////////////////// Results end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO First end
+    public function first()
+    {
+        return !empty($this->_results[0]) ? $this->_results[0] : [];
+    }
+
+////////////////////////////////////////////////////////////////////////// First end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO Count end
+    public function count()
+    {
+        return $this->_count;
+    }
+
+////////////////////////////////////////////////////////////////////////// Count end
+//
+//
+////////////////////////////////////////////////////////////////////////// TODO Last ID end
+    public function lasID()
+    {
+        return $this->_lastInsertID;
+    }
+//////////////////////////////////////////////////////////////////////////// Last ID end
+////////////////////////////////////////////////////////////////////////// TODO Last ID end
+    public function get_columns($table)
+    {
+        return $this->query("SHOW COLUMNS FROM $table")->results();
+    }
+
+//////////////////////////////////////////////////////////////////////////// Last ID end
     public function error()
     {
         return $this->_error;
     }
-
-
 }
