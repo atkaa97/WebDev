@@ -1,6 +1,6 @@
 <?php
 
-class Controller extends Application
+class Controller  // extends Application
 {
     protected $_controller;
     protected $_action;
@@ -8,7 +8,7 @@ class Controller extends Application
 
     public function __construct($controller, $action)
     {
-        parent::__construct();
+        // parent::__construct();
         $this->_controller = $controller;
         $this->_action = $action;
         $this->view = new View();

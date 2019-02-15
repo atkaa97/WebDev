@@ -1,6 +1,6 @@
 <?php
 
-class  Register extends Controller
+class  User extends Controller
 {
     public function __construct($controller, $action)
     {
@@ -8,6 +8,9 @@ class  Register extends Controller
         $this->view->setLayout('default');
     }
     public function loginAction(){
-        $this->view->rander('register/login');
+        $this->view->rander('user/login');
+    }
+    public function RegisterAction(){
+        $this->view->rander('user/register');
     }
 }

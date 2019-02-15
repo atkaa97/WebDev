@@ -16,10 +16,12 @@ class Router
             if (method_exists($controller, $action)) {
                 $dispatch->$action();
             } else {
-                die('The "' . $action . '" method does not exists in the controller "' . $controller_name . '"');
+//                die('The "' . $action . '" method does not exists in the controller "' . $controller_name . '"');
+                header('Location: /notfound');
             }
         } else {
-            die("The \"$controller\" controller does not exists!");
+//            die("The \"$controller\" controller does not exists!");
+            header('Location: /notfound');
         }
     }
 }

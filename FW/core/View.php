@@ -4,6 +4,7 @@ class View
     protected $_head;
     protected $_body;
     protected $_siteTitle = SITE_TITLE;
+    protected $_siteIcon = SITE_ICON;
     protected $_outputBuffer;
     protected $_layout = DEFAULT_LAYOUT;
 
@@ -22,7 +23,8 @@ class View
             include($viewPath);
             include($layoutPath);
         } else {
-            die('The view\"' . $viewName . '\"does not exist');
+//            die('The view\"' . $viewName . '\"does not exist');
+            header('Location: /notfound');
         }
     }
 
@@ -62,6 +64,15 @@ class View
     public function setSiteTitle($title)
     {
         $this->_siteTitle = $title;
+    }
+    public function siteIcon()
+    {
+        return $this->_siteIcon;
+    }
+
+    public function setSiteIcon($icon)
+    {
+        $this->_siteIcon = $icon;
     }
 
     public function setLayout($path)

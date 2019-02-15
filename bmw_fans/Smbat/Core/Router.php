@@ -4,6 +4,7 @@ namespace Core;
 
 class Router
 {
+
     public function __construct()
     {
         $route = $_SERVER['REQUEST_URI'];

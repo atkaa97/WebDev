@@ -1,11 +1,11 @@
 <?php $this->start('head'); ?>
-<?php $this->setSiteTitle('Home'); ?>
+<?php $this->setSiteTitle('About Us'); ?>
+<?php $this->setSiteIcon('about'); ?>
 <?php $this->end(); ?>
 
 <?php $this->start('body'); ?>
     <div class="jumbotron text-center">
-        <h1>Social Site</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1>About Us</h1>
     </div>
 
     <div class="container">
