@@ -8,7 +8,7 @@ define('DB_HOST', '127.0.0.1');
 define('DEFAULT_CONTROLLER', 'Home');
 define('DEFAULT_LAYOUT', 'default');
 
-define('PROOT', '/MyMVC/');
+define('PROOT', '/MyMVC');
 define('SITE_TITLE', 'My MVC FW');
 
 

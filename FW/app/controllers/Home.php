@@ -10,7 +10,7 @@ class Home extends Controller
 
     public function indexAction()
     {
-        $db = DB::getInstance();
+//        $db = DB::getInstance();
 ////////////////////////////////////////////////////////////////////////// TODO Query start
 //        $sql = 'SELECT * FROM contacts WHERE id = 1';
 //        $contactsQ = $db->query($sql);
@@ -59,12 +59,12 @@ class Home extends Controller
 //            "limit" => '100 '
 //        ]);
 //        dd($contacts);
-
-        $contactFirts = $db->findFirst('contacts',[
-            "whereFields" => ['fname = ?'],
-            "whereValues" => ['Garnik'],
-        ]);
-        dd($contactFirts);
+//
+//        $contactFirts = $db->findFirst('contacts',[
+//            "whereFields" => ['fname = ?'],
+//            "whereValues" => ['Garnik'],
+//        ]);
+//        dd($contactFirts);
 
         $this->view->rander('home/index');
     }
