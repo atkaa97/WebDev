@@ -47,8 +47,72 @@ class DB
     }
 
 //////////////////////////////////////////////////////////////////////// Query End
-//
-//
+
+    protected function _read($table, $params = [])
+    {
+        $whereFields = '';
+        $whereValues = [];
+        $order = '';
+        $limit = '';
+
+        //  conditions
+        if (isset($params['whereFields'])) {
+            if (is_array($params['whereFields'])) {
+                foreach ($params['whereFields'] as $condition) {
+                    $whereFields .= ' ' . $condition . 'AND';
+                }
+                $whereFields = trim($whereFields);
+                $whereFields = rtrim($whereFields, 'AND');
+            } else {
+                $whereFields = $params['whereFields'];
+            }
+            if ($whereFields != '') {
+                $whereFields = ' Where ' . $whereFields;
+            }
+        }
+        //bind
+        if (array_key_exists('whereValues', $params)) {
+            $whereValues = $params['whereValues'];
+        }
+
+        //order
+        if (array_key_exists('order', $params)) {
+            $order = ' ORDER BY ' . $params['order'];
+        }
+
+        //limit
+        if (array_key_exists('limit', $params)) {
+            $limit = ' LIMIT ' . $params['limit'];
+        }
+
+        $sql = "SELECT * FROM {$table}{$whereFields}{$order}{$limit}";
+        if ($this->query($sql, $whereValues)) {
+            if (!count($this->_results)) {
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+
+
+    public function find($table, $params = [])
+    {
+        if ($this->_read($table, $params)) {
+            return $this->results();
+        }
+        return false;
+    }
+
+    public function findFirst($table, $params = [])
+    {
+        if ($this->_read($table, $params)) {
+            return $this->first();
+        }
+        return false;
+    }
+
+
 //////////////////////////////////////////////////////////////////////// TODO Insert start
     public function insert($table, $fields = [])
     {
