@@ -14,7 +14,7 @@
         }
 
         footer {
-            background-color: #0f334a;
+            background-color: #193453;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -28,6 +28,15 @@
             padding: 10.5px;
             margin: 0px;
             line-height: 100%;
+        }
+
+        .errorInput {
+            border-color:  rgba(225, 25, 0, 0.71) !important;
+        }
+
+        input::placeholder {
+            font-style: italic !important;
+            color: rgba(225, 25, 0, 0.71) !important;
         }
     </style>
 </head>
@@ -54,7 +63,7 @@
 </div>
 <footer>
     <p>© 2019 <a style="color:#0a93a6; text-decoration:none;" href="/preview"> Social Site</a> | All Rights Reserved.
-        </p>
+    </p>
 </footer>
 
 </body>

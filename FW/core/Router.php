@@ -13,8 +13,7 @@ class Router
 
         if (class_exists($controller)) {
         $dispatch = new $controller($controller_name, $action);
-            if (method_exists($controller, $action)) {
-                $dispatch->$action();
+            if (method_exists($controller, $action)) {$dispatch->$action();
             } else {
 //                die('The "' . $action . '" method does not exists in the controller "' . $controller_name . '"');
                 header('Location: /notfound');

@@ -4,7 +4,6 @@ define('ROOT', (dirname(__FILE__)));
 require_once(ROOT . DS . 'config' . DS . 'config.php');
 require_once(ROOT . DS . 'app' . DS . 'lib' . DS . 'helpers.php');
 
-// Autoload Classes
 spl_autoload_register('classAutoload');
 
 function classAutoload($className)
@@ -25,6 +24,7 @@ function classAutoload($className)
 }
 
 session_start();
+
 
 $url = isset($_SERVER['PATH_INFO']) ? explode('/', ltrim($_SERVER['PATH_INFO'], '/')) : [];
 

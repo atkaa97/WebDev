@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FW.iml" filepath="$PROJECT_DIR$/.idea/FW.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../bmw_fans/Smbat/.idea/Smbat.iml" filepath="$PROJECT_DIR$/../bmw_fans/Smbat/.idea/Smbat.iml" />
     </modules>
   </component>
 </project>

@@ -1,12 +1,14 @@
 <?php
+
 class View
 {
     protected $_head;
     protected $_body;
     protected $_siteTitle = SITE_TITLE;
     protected $_siteIcon = SITE_ICON;
-    protected $_outputBuffer;
+    protected $_tagName;
     protected $_layout = DEFAULT_LAYOUT;
+
 
     public function __construct()
     {
@@ -40,19 +42,17 @@ class View
 
     public function start($type)
     {
-        $this->_outputBuffer = $type;
+        $this->_tagName = $type;
         ob_start();
     }
 
     public function end()
     {
-        if($this->_outputBuffer == 'head'){
+        if ($this->_tagName == 'head') {
             $this->_head = ob_get_clean();
 
-        }elseif($this->_outputBuffer=='body'){
+        } elseif ($this->_tagName == 'body') {
             $this->_body = ob_get_clean();
-        }else{
-            die('Start method not face');
         }
     }
 
@@ -65,6 +65,7 @@ class View
     {
         $this->_siteTitle = $title;
     }
+
     public function siteIcon()
     {
         return $this->_siteIcon;
