@@ -1,1 +1,1 @@
-#|   HTML   |   CSS   |   JS, jQ   |   PHP, OOP, LARAVEL   | #
+#|   HTML   |   CSS   |   JS, jQ   |   PHP, OOP, LARAVEL   |#
