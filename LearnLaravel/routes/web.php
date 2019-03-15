@@ -19,13 +19,9 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/login/{social}', 'Auth\LoginController@socialLogin')->where('social', 'twitter|facebook|google|github');
-Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')->where('social', 'twitter|facebook|google|github');
-
-
 Route::group(['middleware' => 'admin', 'prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/home', 'HomeController@Index')->name('adminHome');
     Route::get('/users', 'UsersController@Index')->name('adminUsers');
-    Route::get('/users/{id}/{action}', 'UsersController@User');
+    Route::get('/users/{id}/show', 'UsersController@userShow');
+    Route::get('/users/{id}/edit', 'UsersController@userEdit');
 });

@@ -27,19 +27,6 @@ class Helpers
         }
     }
 
-    public static function usersInfo()
-    {
-        $users = DB::table('users')->get();
-        foreach ($users as $user) {
-            if ($user->is_admin == 0) {
-                $user->is_admin = '<i class="far fa-times-circle text-danger fa-lg"></i>';
-            } else {
-                $user->is_admin = '<i class="far fa-check-circle text-success fa-lg"></i>';
-            }
-        }
-        return $users;
-    }
-
     public static function loginNewSocialUser($social_name, $social_user)
     {
         $user_info_db = User::where($social_name . '_id', $social_user->id)->first();

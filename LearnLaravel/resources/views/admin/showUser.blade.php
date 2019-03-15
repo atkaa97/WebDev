@@ -12,49 +12,49 @@
                     <div class="card-body">
                         <h5 class="card-title"><span class="float-left">Username</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->username}}</span>
+                                class="float-right">{{ $user->username}}</span>
                         </h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <span class="float-left">Email</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->email}}</span>
+                                class="float-right">{{ $user->email}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">First Name</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->first_name}}</span>
+                                class="float-right">{{ $user->first_name}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Last Name</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->last_name}}</span>
+                                class="float-right">{{ $user->last_name}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Age</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->age}}</span>
+                                class="float-right">{{ $user->age}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Is Admin</span>
                             <span
-                                class="float-right">{!! \App\Http\Controllers\Admin\UsersController::$user->is_admin !!}</span>
+                                class="float-right">{!!  $user->is_admin ? '<i class="far fa-check-circle text-success fa-lg"></i>' : '<i class="far fa-times-circle text-danger fa-lg"></i>' !!}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Email Verified</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->email_verified_at}}</span>
+                                class="float-right">{{ $user->email_verified_at}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Created</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->created_at}}</span>
+                                class="float-right">{{ $user->created_at}}</span>
                         </li>
                         <li class="list-group-item">
                             <span class="float-left">Updated</span>
                             <span
-                                class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->updated_at}}</span>
+                                class="float-right">{{ $user->updated_at}}</span>
                         </li>
                     </ul>
                     <div class="card-body">

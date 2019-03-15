@@ -6,7 +6,6 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('Login') }}</div>
-
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
@@ -14,12 +13,10 @@
                             <div class="form-group row">
                                 <label for="username"
                                        class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
-
                                 <div class="col-md-6">
                                     <input id="username" type="text"
                                            class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
                                            name="username" value="{{ old('username') }}" required autofocus>
-
                                     @if ($errors->has('username'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('username') }}</strong>
@@ -36,7 +33,6 @@
                                     <input id="password" type="password"
                                            class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                            name="password" required>
-
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -63,34 +59,11 @@
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Login') }}
                                     </button>
-
-
                                     @if (Route::has('password.request'))
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-2">
-                                <div class="col-md-8 offset-md-4">
-                                    <a href="/login/facebook" class="my-btn-social my-btn-facebook"> <i
-                                            class="fab fa-facebook-f"></i> &ensp;
-                                        Continue with Facebook</a>
-                                </div>
-                            </div>
-                            <div class="form-group row mb-2">
-                                <div class="col-md-8 offset-md-4">
-                                    <a href="/login/twitter" class="my-btn-social my-btn-twitter"> <i class="fab fa-twitter"></i> &ensp;
-                                        Continue with Twitter</a>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-md-8 offset-md-4">
-                                    <a href="/login/github" class="my-btn-social my-btn-github"> <i class="fab fa-github"></i>&ensp;
-                                        Continue with GitHub</a>
                                 </div>
                             </div>
                         </form>

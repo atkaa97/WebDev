@@ -6,29 +6,29 @@
                 <div class="card-body">
                     <h5 class="card-title"><span class="float-left">Username</span>
                         <span
-                            class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->username}}</span>
+                            class="float-right">{{$user->username}}</span>
                     </h5>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <span class="float-left">Email</span>
                         <span
-                            class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->email}}</span>
+                            class="float-right">{{$user->email}}</span>
                     </li>
                     <li class="list-group-item">
                         <span class="float-left">First Name</span>
                         <span
-                            class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->first_name}}</span>
+                            class="float-right">{{$user->first_name}}</span>
                     </li>
                     <li class="list-group-item">
                         <span class="float-left">Last Name</span>
                         <span
-                            class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->last_name}}</span>
+                            class="float-right">{{$user->last_name}}</span>
                     </li>
                     <li class="list-group-item">
                         <span class="float-left">Age</span>
                         <span
-                            class="float-right">{{\App\Http\Controllers\Admin\UsersController::$user->age}}</span>
+                            class="float-right">{{$user->age}}</span>
                     </li>
 
                 </ul>
@@ -44,7 +44,7 @@
                     <div class="card-header">{{ __('Edit') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" action="">
+                        <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="form-group row">
                                 <label for="username"
@@ -53,7 +53,7 @@
                                 <div class="col-md-6">
                                     <input id="username" type="text"
                                            class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
-                                           name="username" value="{{ old('username') }}" required autofocus>
+                                           name="username" value="{{ old('username', $user->username) }}" required autofocus>
                                 </div>
                             </div>
 
@@ -64,7 +64,7 @@
                                 <div class="col-md-6">
                                     <input id="email" type="email"
                                            class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                           name="email" value="{{ old('email') }}" required>
+                                           name="email" value="{{ old('email', $user->email) }}" required>
 
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
