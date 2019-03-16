@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Helpers;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Helpers::is_admin()) {
+        if (is_admin()) {
             return view('admin.home');
         } else {
             return view('home');

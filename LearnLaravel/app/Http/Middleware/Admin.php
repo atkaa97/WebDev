@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use App\Helpers;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +16,7 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if (!Helpers::is_admin()) {
+        if (!is_admin()) {
             return redirect(route('home'));
         }
         return $next($request);
