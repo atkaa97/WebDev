@@ -61,7 +61,7 @@
                         <a href="edit" class="card-link">Edit</a>
                         <a href="#" class="card-link">Block</a>
                         <a href="#" class="card-link">Delete</a>
-                        <a href="{{route('adminUsers')}}" class="card-link float-right">Users List</a>
+                        <a href="{{route('users.index')}}" class="card-link float-right">Users List</a>
                     </div>
                 </div>
             </div>

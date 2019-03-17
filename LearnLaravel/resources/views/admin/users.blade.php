@@ -32,7 +32,7 @@
                                         <td>{{$user->email}}</td>
                                         <td>{!!  $user->is_admin ? '<i class="far fa-check-circle text-success fa-lg"></i>' : '<i class="far fa-times-circle text-danger fa-lg"></i>' !!}</td>
                                         <td>
-                                            <a href="users/{{$user->id}}/show" title="Show More Info"
+                                            <a href="{{route('users.show',$user->id)}}" title="Show More Info"
                                                class="text-primary"><i
                                                     class="fas fa-eye fa-lg"></i></a>&nbsp;&nbsp;
                                             <a href="users/{{$user->id}}/edit" title="Edit" class="text-success"><i
