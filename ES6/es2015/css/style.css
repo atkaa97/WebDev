@@ -1,0 +1,22 @@
+#draggable1, #draggable2, #draggable3, #draggable4{
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+
+#draggable1 {
+    background-color: darkred;
+}
+
+#draggable2 {
+    background-color: darkgreen;
+}
+
+#draggable3 {
+    background-color: darkblue;
+}
+
+#draggable4 {
+    background-color: yellowgreen;
+}
+
