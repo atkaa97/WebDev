@@ -1,0 +1,79 @@
+<section class="container bg-white shadow p-3 mt-3" >
+    <h3>Register</h3>
+    <form ng-submit="register($event)">
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="First Name" ng-model="user.name">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="surname" class="col-sm-2 col-form-label">Surname</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="surname" placeholder="Last Name" ng-model="user.surname">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Email" ng-model="user.email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone" ng-model="user.phone">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Date of Birth.</label>
+            <div class="col-sm-10">
+                <div class="form-row">
+                    <div class="col-4">
+                        <select class="form-control" ng-model="user.month">
+                            <option value="">Select Month</option>
+                            <option ng-repeat="(key, value) in months track by $index" ng-value="value">{{ value }}</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-control" ng-model="user.day">
+                            <option value="">Select Day</option>
+                            <option ng-repeat="(day, value) in days track by $index" ng-value="(day + 1)">{{ (day + 1) }}</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-control" ng-model="user.year">
+                            <option value="">Select Year</option>
+                            <option ng-repeat="(year, value) in years track by $index" ng-value="(year + 1901)">{{ (year + 1901) }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="1" checked ng-model="user.gender">
+                        <label class="form-check-label" for="gridRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="0" ng-model="user.gender">
+                        <label class="form-check-label" for="gridRadios2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </form>
+</section>
