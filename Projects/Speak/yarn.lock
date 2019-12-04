@@ -579,6 +579,16 @@
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
 
+"@uirouter/angularjs@^1.0.22":
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.23.tgz#aeec0f96b0c42187c5044ef244ba6ccb75a5d835"
+  dependencies:
+    "@uirouter/core" "6.0.1"
+
+"@uirouter/core@6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-6.0.1.tgz#93b02a5d178a7ab7313f34b7b3f019a000d23396"
+
 "@vue/component-compiler-utils@^2.5.1":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-2.6.0.tgz#aa46d2a6f7647440b0b8932434d22f12371e543b"
@@ -780,6 +790,26 @@ ajv@^6.1.0:
 alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
+
+angular-animate@^1.7.8:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.7.9.tgz#a397f82434c1e7ed5b7a298fa70fc3de989a6785"
+
+angular-resource@^1.7.8:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.7.9.tgz#fa53623fae2c60debe2410d692447dcb0ba02396"
+
+angular-toastr@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/angular-toastr/-/angular-toastr-2.1.1.tgz#9f8350ca482145a44d011a755b8fb3623d60544c"
+
+angular-ui-bootstrap@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/angular-ui-bootstrap/-/angular-ui-bootstrap-2.5.6.tgz#23937322ec641a6fbee16498cc32452aa199e7c5"
+
+angular@^1.7.9:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.9.tgz#e52616e8701c17724c3c238cfe4f9446fd570bc4"
 
 ansi-colors@^3.0.0:
   version "3.2.4"
@@ -1752,6 +1782,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
+de-indent@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
+
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2567,7 +2601,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-he@1.2.x:
+he@1.2.x, he@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
 
@@ -5404,6 +5438,13 @@ vue-style-loader@^4.1.0:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
+
+vue-template-compiler@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
+  dependencies:
+    de-indent "^1.0.2"
+    he "^1.1.0"
 
 vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
